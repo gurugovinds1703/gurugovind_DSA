@@ -1,6 +1,4 @@
 #include <stdio.h>
-
-// Recursive function
 int fibonacci(int n) {
     if(n == 0)
         return 0;
@@ -9,13 +7,10 @@ int fibonacci(int n) {
     else
         return fibonacci(n - 1) + fibonacci(n - 2);
 }
-
 int main() {
     int n;
-
     printf("Enter n: ");
     scanf("%d", &n);
-
     if(n < 0) {
         printf("Invalid input\n");
     } else {
